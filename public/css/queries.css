@@ -1,0 +1,67 @@
+@media (max-width: 21em) {
+  /* Section 1 */
+  .full-nav-framer {
+    flex-direction: column;
+    row-gap: 1.2rem;
+    padding: 20px 20px 10px 20px;
+  }
+
+  .home-nav {
+    font-size: 2rem;
+  }
+
+  .nav-el {
+    font-size: 1.2rem;
+  }
+
+  .hero-framer {
+    row-gap: 5px;
+  }
+
+  .header-img {
+    width: 45vw;
+  }
+
+  .header-brief {
+    font-size: 0.9rem;
+    width: 150px;
+    text-align: center;
+    line-height: 1.1rem;
+    padding: 0;
+    padding-bottom: 0.4rem;
+  }
+
+  /* Design Break */
+  .break-design {
+    font-size: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Section 2 */
+  .outside-img {
+    width: 75vw;
+    justify-self: center;
+  }
+
+  .full-about-framer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .about-framer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .h2-el {
+    font-size: 7.2rem;
+    padding: 1rem;
+  }
+
+  .about-info {
+    font-size: 1.82rem;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+  }
+}

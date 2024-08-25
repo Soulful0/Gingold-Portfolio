@@ -1,0 +1,159 @@
+/* DESIGN FOR PHONES FIRST!!! */
+
+/* Navigation */
+.full-nav-framer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  padding: 40px 40px 30px 40px;
+}
+
+.home-nav {
+  font-size: 3.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.home-nav:link,
+.home-nav:visited {
+  color: #222;
+  font-weight: 800;
+  transition: all 0.3s;
+}
+
+.home-nav:hover,
+.home-nav:active {
+  color: #222222ea;
+  text-shadow: -1rem 0.6rem 2.4rem rgba(0, 0, 0, 0.1);
+}
+
+.nav-framer {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-el {
+  list-style: none;
+
+  font-size: 1.6rem;
+}
+
+.nav-style:link,
+.nav-style:visited {
+  color: #333232;
+  font-weight: 400;
+  transition: all 0.3s;
+}
+
+.nav-style:hover,
+.nav-style:active {
+  color: #f1a308;
+  text-shadow: 0.8rem 0.2rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.header-img {
+  align-self: center;
+  width: 35vw;
+  box-shadow: 0rem 0rem 100rem rgba(0, 0, 0, 0.2);
+}
+
+.udemy-img {
+  width: 30vw;
+}
+
+/* Hero */
+
+.hero-framer {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+
+.header-brief {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.8rem;
+  align-self: center;
+
+  color: #2d2c2c;
+}
+
+/* Break Design */
+
+.break-design {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-shadow: 0.8rem 0.2rem 1rem rgba(0, 0, 0, 0.08);
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* About */
+
+.outside-img {
+  width: 30vw;
+  justify-self: center;
+}
+
+.outside-img-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .outside-img-box::before {
+  position: absolute;
+  content: "";
+  display: block;
+
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%);
+} */
+
+.grey-section {
+  /* margin-top: 55px; */
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.full-about-framer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 35px;
+}
+
+.about-framer {
+  display: flex;
+  flex-direction: column;
+}
+
+.h2-el {
+  font-size: 8rem;
+  font-weight: 600;
+  letter-spacing: -3.5px;
+
+  padding: 2rem;
+}
+
+.about-info {
+  font-size: 2.2rem;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+
+  padding: 0.8rem;
+}
+
+.outside-img {
+  border-radius: 5px;
+}
