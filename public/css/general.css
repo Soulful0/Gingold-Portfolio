@@ -86,6 +86,9 @@ ABOUT STARTER TEXT
 html {
   scroll-behavior: smooth;
   font-size: 10px;
+  /* background-color: #dcd6cc; */
+  background-color: #f0eee9;
+  /* background-color: #ac9f8e; */
 }
 
 body {
@@ -96,17 +99,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-#Home {
-  /* background-color: #dcd6cc; */
-  background-color: #f0eee9;
-
-  /* background-color: #ac9f8e; */
-}
-
-#About {
-  background-color: #f0eee9;
 }
 
 .break-design {

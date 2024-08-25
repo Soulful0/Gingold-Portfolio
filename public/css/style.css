@@ -69,7 +69,7 @@
 .hero-framer {
   display: flex;
   flex-direction: column;
-  padding-bottom: 100px;
+  padding: 95px;
 }
 
 .header-brief {
