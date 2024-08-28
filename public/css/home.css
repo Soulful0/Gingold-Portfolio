@@ -1,9 +1,61 @@
+/* Common Styles for header-brief-top and header-brief-bottom */
+.header-brief-top, 
+.header-brief-bottom {
+    position: relative;
+    white-space: nowrap;
+    transform: translateX(0);
+    transition: transform 0.1s linear;
+    mix-blend-mode: difference;
+    font-size: 6.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Specific Styles for header-brief-top */
+.header-brief-top {
+    text-align: end;
+    top: 6.5rem;
+    right: 45rem;
+}
+
+/* Specific Styles for header-brief-bottom */
+.header-brief-bottom {
+    text-align: start;
+    bottom: 6.5rem;
+    left: 20rem;
+}
+
+/* Add effect so as you scroll, the words start to move out of the page */
+.header-brief-style-top {
+    transform: translateX(-200rem);
+    transition: transform 2.3s ease-in-out;
+}
+
+.header-brief-style-bottom {
+    transform: translateX(200rem);
+    transition: transform 2.3s ease-in-out;
+}
+
+/* Fade-In Effects */
+#fadeInEffect-left-1, 
+#fadeInEffect-left-2, 
+#fadeInEffect-right-1, 
+#fadeInEffect-right-2 {
+    transition: transform 2.3s ease-in-out;
+}
+
+.fade-in {
+    transform: translate(0);
+}
+
+/* Hero Framer */
 .hero-framer {
     display: flex;
     flex-direction: column;
     padding: 0px 25px 0px 25px;
 }
 
+/* Image Style */
 #header-img-style {
     width: 50vw; /* Initial width */
     transition: width 2.3s ease-in-out; /* Smooth transition effect */
@@ -11,61 +63,11 @@
 
 .header-img {
     align-self: center;
-    width: 35vw; /* Final width after transition */
+    width: 34vw; /* Final width after transition */
     box-shadow: 0rem 0rem 3rem rgba(0, 0, 0, 0.2);
 }
-  
 
-.header-brief-top {
-    position: relative;
-    text-align: end;
-  
-    top: 6.5rem;
-    right: 45rem;
-}
-
-.header-brief-bottom {
-    position: relative;
-    text-align: start;
-  
-    bottom: 6.5rem;
-    left: 45rem;
-}
-
-.header-brief-style-top {
-    font-size: 6.5rem;
-    font-weight: 700;
-    color: #fff;
-    mix-blend-mode: difference;
-    transform: translateX(-200rem);
-    
-}
-
-
-.header-brief-style-bottom {
-    font-size: 6.5rem;
-    font-weight: 700;
-    color: #fff;
-    mix-blend-mode: difference;
-    transform: translateX(200rem);
-}
-  
-  
-#fadeInEffect-left-1, #fadeInEffect-left-2 {
-    transition: transform 2.3s ease-in-out;
-}
-  
-#fadeInEffect-right-1, #fadeInEffect-right-2 {
-    transition: transform 2.3s ease-in-out;
-}
-  
-.fade-in {
-    transform: translate(0);
-}
-  
-  
-  /* Break Design */
-  
+/* Break Design */
 .break-design {
     font-size: 1.2rem;
     font-weight: 500;
