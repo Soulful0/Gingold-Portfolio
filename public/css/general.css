@@ -39,7 +39,6 @@ Large: 1.8
 #C2EDFF
 #64A9F7
 
-
 - Accents: 
 
 #037D7A
@@ -47,8 +46,6 @@ Large: 1.8
 #F1A208
 
 - Greys
-
-
 
 --- 05 SHADOWS
 
@@ -65,45 +62,40 @@ Medium:
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 #f0eee9
-
-
-
-
-ABOUT STARTER TEXT 
-   Welcome, my name is Joshua Gingold. I am certified in Full Stack
-        Development from University of Austin Texas, and I am currently a
-        student at University of Nevada Reno. As you scroll through my website,
-        you will soon be well acquainted with who I am, and what I have to offer
-        professionally.
 */
 
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
-  font-size: 10px;
-  /* background-color: #dcd6cc; */
+  overflow-x: hidden;
+}
+
+html, body {
   background-color: #f0eee9;
-  /* background-color: #ac9f8e; */
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  overflow: hidden;
+  max-width: 100%;
+
   line-height: 1;
   font-weight: 500;
-
-  max-width: 100%;
-  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
 }
 
-.break-design {
-  background-color: #f0eee9;
+.smooth-scroll-wrapper {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  overflow: hidden;
 }
