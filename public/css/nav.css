@@ -1,13 +1,11 @@
 /* DESIGN FOR PHONES FIRST!!! */
 
 /* Navigation */
-.full-nav-framer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
 
-  padding: 20px 40px 0px 40px;
+.nav-framer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 35px;
 }
 
 .home-nav {
@@ -35,11 +33,6 @@
 }
 
 
-.nav-framer {
-  display: flex;
-  align-items: center;
-  gap: 35px;
-}
 
 .nav-el {
   list-style: none;

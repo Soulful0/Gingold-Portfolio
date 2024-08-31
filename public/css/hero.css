@@ -1,22 +1,43 @@
+
 /* Frame */
 .hero-frame{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     height: 100vh;
 }
 /* Frame */
 
 /* Headshot Transition */
+
+.container {
+    position: relative;
+    display: grid;
+    
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2 / span 10;
+}
+
+/* .img-wrapper:nth-child() {
+
+} */
+
 .headshot{
     border-radius: 20px;
 
-    width: 100rem;
+    width: 80rem;
     transition: width 2s ease-in;
 }
 
 .headshot-shrink {
-    width: 50rem;
+    width: 60rem;
 }
+
 /* Headshot Transition */
