@@ -1,0 +1,22 @@
+/* Frame */
+.hero-frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+/* Frame */
+
+/* Headshot Transition */
+.headshot{
+    border-radius: 20px;
+
+    width: 100rem;
+    transition: width 2s ease-in;
+}
+
+.headshot-shrink {
+    width: 50rem;
+}
+/* Headshot Transition */
