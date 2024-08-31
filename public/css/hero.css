@@ -7,7 +7,30 @@
     
     height: 100vh;
 }
+
 /* Frame */
+
+/* H2 Introduction */
+
+.blend {
+    mix-blend-mode: difference;
+}
+
+#line-1 {
+
+}
+
+.h2-wrapper {
+}
+
+.h2-style {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+}
+
+
+/* H2 Introduction */
+
 
 /* Headshot Transition */
 
