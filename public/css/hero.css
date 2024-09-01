@@ -1,51 +1,31 @@
-
 /* Frame */
 .hero-frame{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     height: 100vh;
+    isolation: isolate;
 }
-
 /* Frame */
 
 /* H2 Introduction */
-
-.blend {
-    mix-blend-mode: difference;
-}
-
-#line-1 {
-
-}
-
 .h2-wrapper {
+    position: relative;
 }
 
 .h2-style {
     font-size: 3.4rem;
     text-transform: uppercase;
 }
-
-
 /* H2 Introduction */
 
 
 /* Headshot Transition */
-
-.container {
-    position: relative;
-    display: grid;
-    
-    grid-template-columns: repeat(12, 1fr);
-}
-
 .img-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-column: 2 / span 10;
+    grid-column: 8 / span 12;
 }
 
 /* .img-wrapper:nth-child() {
@@ -62,5 +42,4 @@
 .headshot-shrink {
     width: 60rem;
 }
-
 /* Headshot Transition */

@@ -1,6 +1,22 @@
 /* DESIGN FOR PHONES FIRST!!! */
 
 /* Navigation */
+.nav-blend {
+  position: relative;
+  mix-blend-mode: difference;
+}
+
+.nav-blend::after {
+ position: absolute;
+ inset: 0;
+}
+
+.home-nav {
+  font-size: 3.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #2d2c2c;
+}
 
 .nav-framer {
   display: flex;
@@ -8,48 +24,22 @@
   gap: 35px;
 }
 
-.home-nav {
-  font-size: 3.6rem;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-.home-nav:link,
-.home-nav:visited {
-  color: #2d2c2c;
-  font-weight: 800;
-  transition: all 2.5s;
-}
-
-.home-nav:hover,
-.home-nav-gold {
-  color: #b89c00;
-  transition: all 2.5s ease-in;
-}
-
-.home-nav-gold {
-  color: #2d2c2c;
-  transition: all 0.4s ease-out;
-}
-
-
 
 .nav-el {
   list-style: none;
-
   font-size: 3rem;
 }
 
 .nav-style:link,
 .nav-style:visited {
   color: #2d2c2c;
-  font-weight: 400;
-  transition: all 0.3s;
+  text-shadow: none;
+  transition: text-shadow 1s ease;
 }
 
 .nav-style:hover,
 .nav-style:active {
   color: #f1a308;
-  font-weight: 700;
-  text-shadow: 0.8rem 0.2rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-shadow: 1.2px 0 currentColor, -1px 0 currentColor;
 }
