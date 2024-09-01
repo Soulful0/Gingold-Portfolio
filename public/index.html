@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="./css/general.css" />
     <link rel="stylesheet" type="text/css" href="./css/nav.css" />
     <link rel="stylesheet" type="text/css" href="./css/hero.css" />
+    <link rel="stylesheet" type="text/css" href="./css/anims.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,13 +14,15 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
     <title>Joshua Gingold</title>
 </head>
 <body>
   <!-- Navigation -->
   <header>
-    <div class="nav-blend">
-      <h1><a class="home-nav" href="/">Joshua Gingold</a></h1>
       <nav>
         <ul>
           <div class="nav-framer">
@@ -29,17 +32,67 @@
           </div>
         </ul>
       </nav>
-    </div>
   </header>
 
   <main>
     <div class="scrollable">
       <!-- Section 1 -->
       <section class="hero-frame">
-          <div class="img-wrapper">
-            <img class="headshot" src="./images/grand-canyon.png" alt="Grand Canyon"/>
+        <!-- <h1 class="h1-name">Joshua Gingold</h1> -->
+    <div class="h1-name">
+      <h1>
+        <div class="h1-container">
+          <div class="first-name">
+            <span data-anims="right-fade-in" data-anims-delay="100" class="first-letter">
+              <span>J</span>
+            </span>
+            <span data-anims="right-fade-in" data-anims-delay="200" class="first-letter">
+              <span>o</span>
+            </span>
+            <span data-anims="right-fade-in" data-anims-delay="300" class="first-letter">
+              <span>s</span>
+            </span>
+            <span data-anims="right-fade-in" data-anims-delay="400" class="first-letter">
+              <span>h</span>
+            </span>
+            <span data-anims="right-fade-in" data-anims-delay="500" class="first-letter">
+              <span>u</span>
+            </span>
+            <span data-anims="right-fade-in" data-anims-delay="600" class="first-letter">
+              <span class="spacing-h1" >a</span>
+            </span>
           </div>
-        </section>
+
+          <div class="last-name">
+            <span data-anims="left-fade-in" data-anims-delay="700" class="last-letter">
+              <span>G</span>
+            </span>
+            <span data-anims="left-fade-in" data-anims-delay="600" class="last-letter">
+              <span>i</span>
+            </span>
+            <span data-anims="left-fade-in" data-anims-delay="500" class="last-letter">
+              <span>n</span>
+            </span>
+            <span data-anims="left-fade-in" data-anims-delay="400" class="last-letter">
+              <span>g</span>
+            </span>
+            <span data-anims="left-fade-in" data-anims-delay="300" class="last-letter">
+              <span>o</span>
+            </span>
+            <span data-anims="left-fade-in" data-anims-delay="200" class="last-letter">
+              <span>l</span>
+            </span>
+            <span data-anims="left-fade-in" data-anims-delay="100" class="last-letter">
+              <span>d</span>
+            </span>
+          </div>
+      </div>
+    </h1>
+  </div>
+        <div class="img-wrapper">
+            <img class="headshot" src="./images/grand-canyon.png" alt="Grand Canyon"/>
+        </div>
+      </section>
     </div>
   </main>
 

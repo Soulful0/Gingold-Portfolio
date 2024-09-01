@@ -1,21 +1,9 @@
 /* DESIGN FOR PHONES FIRST!!! */
 
 /* Navigation */
-.nav-blend {
-  position: relative;
-  mix-blend-mode: difference;
-}
-
 .nav-blend::after {
  position: absolute;
  inset: 0;
-}
-
-.home-nav {
-  font-size: 3.6rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #2d2c2c;
 }
 
 .nav-framer {

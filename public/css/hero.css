@@ -1,45 +1,63 @@
 /* Frame */
-.hero-frame{
+.hero-frame {
     position: relative;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(15, 1fr);
     height: 100vh;
     isolation: isolate;
 }
 /* Frame */
 
-/* H2 Introduction */
-.h2-wrapper {
-    position: relative;
-}
-
-.h2-style {
-    font-size: 3.4rem;
+/* H1 Introduction */
+.h1-name {
+    font-size: 10rem;
+    font-weight: 800;
     text-transform: uppercase;
+    color: #2d2c2c;
+    grid-column: 3 / span 8;
+    grid-row: 2 / span 8;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
 }
-/* H2 Introduction */
 
+.h1-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-name span, .last-name span {
+    letter-spacing: -12px;
+    backface-visibility: hidden;
+}
+
+.spacing-h1 {
+    margin-right: 35px;
+}
+
+.first-letter, .last-letter {
+    animation-duration: 3s;
+}
+
+/* H1 Introduction */
 
 /* Headshot Transition */
 .img-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-column: 8 / span 12;
+    grid-column: 1 / span 12;
+    grid-row: 4 / span 9;
 }
 
-/* .img-wrapper:nth-child() {
-
-} */
-
-.headshot{
+.headshot {
     border-radius: 20px;
-
     width: 80rem;
     transition: width 2s ease-in;
 }
 
 .headshot-shrink {
-    width: 60rem;
+    width: 62rem;
 }
 /* Headshot Transition */

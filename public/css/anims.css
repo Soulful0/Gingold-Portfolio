@@ -1,0 +1,83 @@
+/*!
+ * anims.css
+ * @version 0.1
+ */
+
+ @media (min-width: 1200px) {
+    /* Keyframes for moving and fading in */
+    
+    /* Keyframes for left to right animation */
+    @keyframes leftFadeIn {
+        0% {
+            transform: translateX(-50px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    /* Keyframes for right to left animation */
+    @keyframes rightFadeIn {
+        0% {
+            transform: translateX(50px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    /* Apply the animation to elements with the 'left-fade-in' data attribute */
+    [data-anims="left-fade-in"] {
+        opacity: 0;
+        transform: translateX(-50px);
+        transition-property: opacity, transform;
+        transition-duration: 1000ms;
+        animation-fill-mode: forwards;
+    }
+
+    /* Apply the animation to elements with the 'right-fade-in' data attribute */
+    [data-anims="right-fade-in"] {
+        opacity: 0;
+        transform: translateX(50px);
+        transition-property: opacity, transform;
+        transition-duration: 1000ms;
+        animation-fill-mode: forwards;
+    }
+
+    /* Activate the left fade-in animation */
+    [data-anims="left-fade-in"].on-screen {
+        animation-name: leftFadeIn;
+    }
+
+    /* Activate the right fade-in animation */
+    [data-anims="right-fade-in"].on-screen {
+        animation-name: rightFadeIn;
+    }
+
+    /* Staggered delays for each letter */
+    [data-anims][data-anims-delay="100"] {
+        animation-delay: 100ms;
+    }
+    [data-anims][data-anims-delay="200"] {
+        animation-delay: 200ms;
+    }
+    [data-anims][data-anims-delay="300"] {
+        animation-delay: 300ms;
+    }
+    [data-anims][data-anims-delay="400"] {
+        animation-delay: 400ms;
+    }
+    [data-anims][data-anims-delay="500"] {
+        animation-delay: 500ms;
+    }
+    [data-anims][data-anims-delay="600"] {
+        animation-delay: 600ms;
+    }
+    [data-anims][data-anims-delay="700"] {
+        animation-delay: 700ms;
+    }
+}
